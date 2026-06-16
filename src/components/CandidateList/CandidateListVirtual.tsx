@@ -4,11 +4,12 @@ import type { CellComponentProps } from "react-window";
 
 import CandidateCard from "@/components/CandidateCard/CandidateCard";
 import type { Candidate } from "@/types/candidate";
+import { isMobile } from "@/utils/helpers";
 
 const CARD_HEIGHT = 165;
 const CARD_WIDTH_MIN = 320;
 const GAP = 16;
-const VISIBLE_ROWS = 5;
+const VISIBLE_ROWS = isMobile() ? 3 : 5;
 
 type CellData = {
   candidates: Candidate[];
