@@ -73,7 +73,6 @@ export default function CandidateDetailPage() {
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-6">
-      {/* Back button */}
       <Link
         to={backUrl}
         className="inline-flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800 mb-6"
@@ -81,7 +80,6 @@ export default function CandidateDetailPage() {
         <IoArrowBack /> Назад к списку
       </Link>
 
-      {/* Header */}
       <header className="flex flex-wrap items-start justify-between gap-4 mb-6 p-4 bg-white border border-gray-300 rounded-xl shadow-sm">
         <div>
           <h1 className="text-xl font-bold text-gray-900">{name}</h1>
@@ -94,9 +92,7 @@ export default function CandidateDetailPage() {
       </header>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Left column */}
         <aside className="space-y-6">
-          {/* Contacts */}
           <section className="bg-white border border-gray-300 rounded-xl p-4 shadow-sm">
             <h2 className="font-semibold text-gray-900 mb-3">Контакты</h2>
             <dl className="space-y-2 text-sm">
@@ -133,7 +129,6 @@ export default function CandidateDetailPage() {
             </dl>
           </section>
 
-          {/* Info */}
           <section className="bg-white border border-gray-300 rounded-xl p-4 shadow-sm">
             <h2 className="font-semibold text-gray-900 mb-3">О кандидате</h2>
             <dl className="space-y-2 text-sm">
@@ -153,21 +148,17 @@ export default function CandidateDetailPage() {
           </section>
         </aside>
 
-        {/* Right column */}
         <div className="lg:col-span-2 space-y-6">
-          {/* Summary */}
           <section className="bg-white border border-gray-300 rounded-xl p-4 shadow-sm">
             <h2 className="font-semibold text-gray-900 mb-2">Summary</h2>
             <p className="text-sm text-gray-700 leading-relaxed">{summary}</p>
           </section>
 
-          {/* Experience */}
           <section className="bg-white border border-gray-300 rounded-xl p-4 shadow-sm">
             <h2 className="font-semibold text-gray-900 mb-4">Опыт работы</h2>
             <ExperienceList exp={exp} />
           </section>
 
-          {/* Criteria */}
           <section className="bg-white border border-gray-300 rounded-xl p-4 shadow-sm">
             <h2 className="font-semibold text-gray-900 mb-3">
               Критерии оценки
@@ -175,7 +166,6 @@ export default function CandidateDetailPage() {
             <CriteriaList criteria={criteria} />
           </section>
 
-          {/* Questions */}
           <section className="bg-white border border-gray-300 rounded-xl p-4 shadow-sm">
             <h2 className="font-semibold text-gray-900 mb-3">
               Вопросы для собеседования

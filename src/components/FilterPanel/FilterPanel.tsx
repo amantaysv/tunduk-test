@@ -35,7 +35,6 @@ const FilterPanel = React.memo(function FilterPanel({
 }: Props) {
   return (
     <div className="flex flex-wrap gap-3 items-center">
-      {/* Verdict filter */}
       <fieldset className="flex gap-1 flex-wrap">
         <legend className="sr-only">Фильтр по вердикту</legend>
         {VERDICT_OPTIONS.map((v) => (
@@ -54,7 +53,6 @@ const FilterPanel = React.memo(function FilterPanel({
         ))}
       </fieldset>
 
-      {/* Sort */}
       <div className="flex items-center gap-2 ml-auto">
         <label
           htmlFor="sort-field"
