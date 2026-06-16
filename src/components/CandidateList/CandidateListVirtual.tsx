@@ -75,7 +75,10 @@ export default function CandidateListVirtual({
       rowHeight={CARD_HEIGHT + GAP}
       cellComponent={Cell}
       cellProps={cellProps}
-      style={{ height: VISIBLE_ROWS * (CARD_HEIGHT + GAP) }}
+      style={{
+        height: VISIBLE_ROWS * (CARD_HEIGHT + GAP),
+        overflowX: "hidden",
+      }}
     />
   );
 }
