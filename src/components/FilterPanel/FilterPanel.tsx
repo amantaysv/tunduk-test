@@ -7,7 +7,7 @@ const VERDICT_OPTIONS: Array<VerdictLabel | "Все"> = [
   "Все",
   "ПОДХОДИТ",
   "ЧАСТИЧНО",
-  "НЕ ПОДХОДИТ",
+  "НЕ СООТВЕТСТВУЕТ",
 ];
 
 const SORT_OPTIONS: Array<{ value: SortField; label: string }> = [

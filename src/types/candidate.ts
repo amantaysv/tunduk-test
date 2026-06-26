@@ -1,5 +1,5 @@
 export type VerdictCode = "verdict-green" | "verdict-orange" | "verdict-red";
-export type VerdictLabel = "ПОДХОДИТ" | "ЧАСТИЧНО" | "НЕ ПОДХОДИТ";
+export type VerdictLabel = "ПОДХОДИТ" | "ЧАСТИЧНО" | "НЕ СООТВЕТСТВУЕТ";
 export type CriteriaStatus = "ok" | "partial" | "no";
 export type CandidateStatus = "new" | "review" | "invited" | "rejected";
 
